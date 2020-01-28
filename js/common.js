@@ -19,8 +19,16 @@ $(function() {
 
 });
 
-var purchasesToggle = document.querySelectorAll('.purchases-toggle');
-console.log(purchasesToggle[0].classList);
+// var purchasesToggle = document.querySelectorAll('.purchases-toggle');
+// console.log(purchasesToggle[0].classList);
+
+// function clicPurchasesToggle() {
+//     purchasesToggle[0].classList.toggle('active');
+// }
+
+// purchasesToggle[0].addEventListener('click', clicPurchasesToggle);
+
+var purchasesToggle = document.querySelectorAll('.purchases');
 
 function clicPurchasesToggle() {
     purchasesToggle[0].classList.toggle('active');
