@@ -6,7 +6,7 @@ $(function() {
         nav:true,
         responsive:{
             0:{
-                items:1
+                items:3
             },
             600:{
                 items:3
@@ -35,3 +35,13 @@ function clicPurchasesToggle() {
 }
 
 purchasesToggle[0].addEventListener('click', clicPurchasesToggle);
+
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $("li.sub-menu.active"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.removeClass('active') // скрываем его
+		}
+	});
+});
